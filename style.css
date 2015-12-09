@@ -35,7 +35,19 @@ input[type=text] {
 	text-align: center;
 }
 
-input[type=button] {
+/*input[type=button] {
+	margin-top: 0.5%;
+	margin-bottom: 2%;
+	padding: 2%;
+	border-radius: 10px;
+	font-size: 1.5em;
+	background-color: #00BFFF;
+	color: black;
+	text-align: center;
+}*/
+
+
+.buttons {
 	margin-top: 0.5%;
 	margin-bottom: 2%;
 	padding: 2%;
@@ -46,10 +58,15 @@ input[type=button] {
 	text-align: center;
 }
 
-
-#multipleButtons {
-	list-style: none;
+#play {
+	background-color:green;
 }
+
+#hint {
+	background-color: yellow;
+}
+
+
 
 
 
