@@ -71,15 +71,12 @@ $(document).ready(function(){
 	}
 
 
-	function randomizeOrder(){
-		return Math.floor((Math.random() * 3)); //Generates a random number between 0 and 2
-	}
-
 	function provideHint(){
-		var value1 = winningNumber + randomizeOrder();
-		var value2 = winningNumber + randomizeOrder();
-		var value3 = winningNumber + randomizeOrder();
-		var hintArray = [value1, value2, value3];
+		var randomValue1 = generateWinningNumber();
+		var randomValue2 = generateWinningNumber();
+		var hintArray = [winningNumber, randomValue1, randomValue2];
+		hintArray = hintArray.sort(); //Sort array such that winningNumber is not in the same spot every time
+		
 		var hintString = '';
 		for (var i = 0; i < hintArray.length; i++) {
 			hintString += hintArray[i];
