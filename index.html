@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Hello World Test Branch! -->
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -10,30 +10,30 @@
     <div id="wrapper">
         <header>
             <ul id="logo">
-                <li><img src="http://www.clipartbest.com/cliparts/4cb/jap/4cbjapocg.png"></li>
-                <li><img src="http://www.experiencedrivendevelopment.com/wp-content/uploads/2014/01/whycatalyst-question-front.png"/></li>
+                <li><img src="./Images/numberSign.png"></li>
+                <li><img src="./Images/questionSign.png"/></li>
             </ul>
             <h1>Guess the Number</h1>
         </header>
         <section>
-            <form>
-                <input type="text" name="numberInput" value="Input # 1 - 100">
-                <br>
-                <input type="button" class="buttons" value="Submit Your Guess">
-            </form>    
-            <!-- <button>Submit your guess</button> -->
+            <h3 class='message'></h3>
+            <h3 class='hint'></h3>
+            <input type="text" id="numberInput" value="Input # 1 - 100">
+            <br>
+            <input id="submit" type="button" class="buttons" value="Submit Your Guess">
+
             <div>
-                <button id="play" class='buttons'>Play Again</button>
-                <button id="hint" class='buttons'>Give me a hint</button>
+                <button id="again" class='buttons'>Play Again</button>
+                <button id="hint"  class='buttons'>Give me a hint</button>
             </div>
             
         </section>
         <footer>
-            <p>x Guesses Remaining</p>
+            <h2><span>5</span> Guesses Remaining</h2>
         </footer>
     </div>
-
-    <script type="text/javascript"></script>
+    <script src="jquery-1.11.3.js"></script>
+    <script src="guessingGame.js"></script>
 
 </body>
 </html>

@@ -58,12 +58,20 @@ input[type=text] {
 	text-align: center;
 }
 
-#play {
+#submit {
+	background-color: blue;
+}
+
+#again {
 	background-color:green;
 }
 
 #hint {
 	background-color: yellow;
+}
+
+footer h2{
+	font-weight: normal;
 }
 
 
